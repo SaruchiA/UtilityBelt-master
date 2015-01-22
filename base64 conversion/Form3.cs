@@ -30,8 +30,9 @@ namespace base64_conversion
         public int ageCalculator(DateTime  dob)
         {
             int  age;
-            DateTime now = DateTime.Today;             
-            age = dob .CompareTo( now) ;
+            DateTime now = DateTime.Today;
+            //age= now.Year- dob.Year;
+            age = now .CompareTo( dob) ;
             return age;           
         }
 
